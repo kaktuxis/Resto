@@ -3,14 +3,19 @@
     src: url(Aleo-Regular.otf); 
    }
 body {
-	background:#ffffff;
-	font-family:Aleo-Regular;
-	width:1500px;
-	padding:0 200px 0 180px;
+	background: #ffffff;
+    font-family: Aleo-Regular;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 	
 }
 header {
 	height:110px;
+	padding:0 200px;
+}
+.padding {
+	padding:0 200px;
 }
 .logo {
 	width:580px;
@@ -42,15 +47,15 @@ header {
 .navigation ul li a:hover{
 	text-decoration:underline;
 }
-.slide {
-	height:570px;
-	border-bottom:#f34949 solid 5px;
-	 z-index: 2;
-	 background:black;
+
+.slide img {
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
 }
-.slide img{
-	margin:0 auto;
-	 z-index: 1;
+.slide {
+	z-index: 2;	
+	border-bottom:#f34949 solid 5px;
 }
 .menu {
 	height:75px;
@@ -62,7 +67,7 @@ header {
 	display:inline-block;
     position:absolute;
     top:16px;   
-    left:692px;
+    left:755px;
 	color:#ffffff;
 	font-size:26px;
 }
@@ -132,12 +137,49 @@ h3 {
 	margin-top:100px;
 }
 footer {
-	padding-top:100px;
-	height:317px;
+	padding:0 200px;
+	height:456px;
 	background:#3b3b3b;
 }
 footer div {
-	text-align: center;
+	text-align: left;
 	display: inline-block; 
 	width:295px;
+}
+.text-bottom {
+	font-size:16px;
+	color:#ffffff;
+	padding-bottom:14px;
+}
+.contact {
+	font-size:15px;
+	color:#ebebeb;
+	padding-bottom:14px;
+}
+.tel {
+	text-decoration:ubderline;
+	border:#ffffff;
+}
+.nav-footer p{
+	font-size:16px;
+	color:#ffffff;
+	padding-bottom:22px;
+	padding-top:0;
+}
+
+.nav-footer p a{
+	font-size:16px;
+	color:#ffffff;
+	padding-bottom:14px;
+	text-decoration:none;
+	}
+.nav-footer p a:hover{
+	text-decoration:underline;
+}
+.about {
+	vertical-align:top;
+}
+footer div {
+	padding-top:90px;
+	padding-right:62px;
 }
