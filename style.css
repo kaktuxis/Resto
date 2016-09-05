@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Aleo-Regular;
+    src: url(Aleo-Regular.otf); 
+   }
+body {
+	background:#ffffff;
+	font-family:Aleo-Regular;
+	width:1500px;
+	padding:0 200px 0 180px;
+	
+}
+header {
+	height:110px;
+}
+.logo {
+	width:580px;
+	float:left;
+	line-height:110px;	
+}
+.logo img {
+	vertical-align:middle;
+}
+.navigation {
+	width:750px;
+	float:right;
+}
+.navigation ul {
+	
+}
+.navigation ul li {
+	list-style-type:none;
+	display:inline;
+	font-size:13px;
+	line-height:78px;
+	padding:0 25px;
+	
+}
+.navigation ul li a {
+	color:#3b3b3b;
+	text-decoration:none;
+}
+.navigation ul li a:hover{
+	text-decoration:underline;
+}
+.slide {
+	height:570px;
+	border-bottom:#f34949 solid 5px;
+	 z-index: 2;
+	 background:black;
+}
+.slide img{
+	margin:0 auto;
+	 z-index: 1;
+}
+.menu {
+	height:75px;
+	text-align: center; 
+    position:relative;
+	padding-bottom:80px;
+}
+.menu span{
+	display:inline-block;
+    position:absolute;
+    top:16px;   
+    left:692px;
+	color:#ffffff;
+	font-size:26px;
+}
+.list{
+	height:432px;
+}
+.list-1{
+	float:left;
+	
+	width:520px;
+}
+.list-2{
+	float:right;
+	width:520px;
+}
+.column {
+	padding-bottom:60px;
+	width: 300px;
+}
+.line {
+	vertical-align:baseline;
+}
+.composition {	
+	color:#b7b7b7;
+	font-size:16px;
+}
+.price {
+	color:#555555;
+	font-size:16px;
+	vertical-align:baseline;
+	padding-left:40px;
+}
+form {
+	text-align:center;
+	padding-top:90px;
+	padding-bottom:100px;
+}
+h2 {
+	color:#3b3b3b;
+	font-size:26px;
+	margin:0;
+	padding-bottom:80px;
+	text-transform:uppercase;
+}	
+h3 {
+	margin:0;
+	font-size:22px;
+	
+}
+.container {
+	margin-top:100px;
+	height:462px;
+}
+.carusel {
+	padding:0;
+	
+}
+.carusel li{
+		width:230px;
+		padding:0 62px 29px 0;
+		list-style-type:none;
+		display:inline;
+		color:#555555;
+	    font-size:16px;
+}
+.gallery {
+	margin-top:100px;
+}
+footer {
+	padding-top:100px;
+	height:317px;
+	background:#3b3b3b;
+}
+footer div {
+	text-align: center;
+	display: inline-block; 
+	width:295px;
+}
