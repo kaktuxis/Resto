@@ -1,13 +1,12 @@
 @font-face {
     font-family: Aleo-Regular;
-    src: url(/font/Aleo-Regular.otf); 
+    src: url(Aleo-Regular.otf); 
    }
 body {
 	background: #ffffff;
     font-family: Aleo-Regular;    
 	margin:0px;
-	padding:0px;
-	
+	padding:0px;	
 }
 header {
 	height:110px;
@@ -20,7 +19,6 @@ header {
 	width:1100px;
 }
 .logo {
-	/*width:580px;*/
 	float:left;
 	left:200px;
 	line-height:110px;	
@@ -29,7 +27,6 @@ header {
 	vertical-align:middle;
 }
 .navigation {
-	/*width:750px;*/
 	float:right;
 	right:200px;
 }
@@ -41,7 +38,6 @@ header {
 	display:inline;
 	line-height:78px;
 	padding:0 25px;
-	
 }
 .navigation ul li a {
 	color:#3b3b3b;
@@ -51,16 +47,6 @@ header {
 .navigation ul li a:hover{
 	text-decoration:underline;
 }
-
-/*.slide img {
-    margin: 0 auto;
-    z-index: 1;
-    width: 100%;
-}
-.slide {
-	z-index: 2;	
-	border-bottom:#f34949 solid 5px;
-}*/
 .block-1 {
 	margin-left: -200px;
 	height:570px;
@@ -68,7 +54,6 @@ header {
 	background:url("images/slide.png");
 	border-bottom:5px #f34949 solid;
 }
-
 h1 {
 	font-family:WC Mano Negra Bta;
 	text-align:center;
@@ -81,7 +66,7 @@ h1 {
 	font-size:16px;
 	color:#ffffff;
 	text-align:center;
-	 overflow: hidden;
+	overflow: hidden;
 }
 .text-slide:before, .text-slide:after{
 	content: '';
@@ -101,50 +86,68 @@ h1 {
 .text-slide:after {
 	margin-right: -100%;
 }
-.menu {
-	height:75px;
-	text-align: center; 
-    position:relative;
-	padding-bottom:80px;
+.block-2 {
+	text-align:center;
 }
-.menu span{
+.menu {
+	height:75px; 
+	padding-bottom:80px;
 	display:inline-block;
-    position:absolute;
-    top:16px;   
-    left:510px;
+}
+.rectangle span{
 	color:#ffffff;
 	font-size:20px;
 	font-family:aleo-bold;
 }
+.rectangle {
+	padding:25px 0;
+	width:154px;
+	background:#f34949;
+	margin-bottom:-6px;
+}
+.triangle-left{
+	display:inline-block;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #f34949; 
+	border-right: 78px solid transparent;	
+	margin-right: -3px;
+}
+.triangle-right {
+	display:inline-block;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #f34949; 
+	border-left: 76px solid transparent;
+	margin-left: 0px;
+}
 .list{
-	height:432px;
+	height:310px;
 }
 .list-1{
 	float:left;
-	
+	display:inline-block;
 	width:520px;
 }
 .list-2{
+	display:inline-block;
 	float:right;
 	width:520px;
 }
 .column {
 	padding-bottom:60px;
-	width: 300px;
-}
-.line {
-	vertical-align:baseline;
 }
 .composition {	
 	color:#b7b7b7;
 	font-size:12px;
 	font-family:Aleo Light Italic;
+	float: left;
 }
 .price {
 	color:#555555;
 	font-size:16px;
-	vertical-align:baseline;
-	padding-left:40px;
+	float:right;
+	margin-top: 5px;
 }
 form {
 	text-align:center;
@@ -169,7 +172,6 @@ form {
 	font-size:16px;
 	color:#9c9c9c;
 	float:left;
-	
 }
 .property-price{
 	width:50px;
@@ -192,31 +194,63 @@ h2 {
 h3 {
 	margin:0;
 	font-size:22px;
-	
+	float:left;
+	text-align:left;
 }
-.gallery {
+h3:after{
+	content: '';
+	width:40px;
+	margin:0 30px;
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	height: 1px;
+	border: solid #e3e1e1;
+	border-width: 0 100px;
+	margin-right:-100%;
+}
+.block-4{
 	margin-top:100px;
+	display:inline-block;
+}
+.column-gallery {
+	display:inline-block;
+	padding-bottom:60px;
+	width:366px;
+	margin-right:-3px;
+}
+.column-gallery-1 {
+	display:inline-block;
+	padding-bottom:60px;
+	width:366px;
+	margin-right:-3px;
+}
+.gallery-img{
+	margin-bottom:-3px;
 }
 footer {
-	width:1100px;
 	padding:0 200px;
-	height:316px;
+	margin:0 auto;
+	width:1100px;
+	height:315px;
 	background:#3b3b3b;
 }
 footer div {
 	text-align: left;
 	display: inline-block; 
 	width:220px;
+	padding-top:100px;
 }
 .text-bottom {
 	font-size:16px;
-	color:#ffffff;	
-	margin:0;	
+	color:#ffffff;
+	line-height: 35px;
+
 }
 .contact {
+	line-height: 35px;
 	font-size:16px;
-	color:#ebebeb;
-	
+	color:#ebebeb;	
 	font-family:aleo-light;
 }
 .tel {
@@ -224,33 +258,30 @@ footer div {
 	border:#ebebeb;
 	font-size:16px;
 	font-family:aleo-bold;
+	line-height: 35px;
 }
 .nav-footer {
-	padding-right:62px;
-	padding-top:80px;
+	padding-left:62px;
+	vertical-align: top;
 }
-.nav-footer p{
+.nav-footer span{
 	font-size:16px;
 	color:#ffffff;
-	padding-bottom:29px;
-	padding-top:0;
-	margin:0;
 }
 
-.nav-footer p a{
+.nav-footer a{
 	font-size:16px;
 	color:#ffffff;
-	padding-bottom:14px;
 	text-decoration:none;
-	}
-.nav-footer p a:hover{
+    line-height: 39px;
+}
+.nav-footer a:hover{
 	text-decoration:underline;
 }
 .about {
-	vertical-align:top;
-	width:220px;
+	padding-left:62px;
+	vertical-align: top;
 }
-.indent-block {
-	padding-top:80px;
-	padding-right:62px;
+.indent-block-2 {
+	padding-left:62px;
 }
