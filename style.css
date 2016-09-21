@@ -204,7 +204,30 @@ h1 {
 	text-align:right;
 }
 .rating{
-	padding-top:15px;
+	padding-top:25px;
+	margin-left: -41px;
+}
+.rating li {
+	background:url("images/star-null.png")no-repeat;
+	list-style-type:none;
+	display:inline;
+    padding-top: 13px;
+    padding-right: 17px;
+}
+.rating li:hover{
+	background:url("images/star.png")no-repeat;
+}
+.rating :nth-child(2):hover{	
+	background:url("images/star.png")no-repeat;
+}
+.rating :nth-child(3):hover{
+	background:url("images/star.png")no-repeat;
+}
+.rating :nth-child(4):hover{
+	background:url("images/star.png")no-repeat;
+}
+.rating :nth-child(5):hover{
+	background:url("images/star.png")no-repeat;
 }
 .block-title {
 	color:#3b3b3b;
