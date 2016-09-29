@@ -59,6 +59,8 @@ h1 {
 	color:#ffffff;
 	padding-top:210px;
 	margin:0;
+    word-spacing: -9px;
+    letter-spacing: -8px;
 }
 .text-slide {
 	font-size:16px;
