@@ -64,6 +64,7 @@ h1 {
 	font-size:16px;
 	color:#ffffff;
 	text-align:center;
+	font-family:Aleo-Regular;
 }
 .text-slide:before, .text-slide:after{
 	content:url(images/lines.png);
@@ -107,12 +108,12 @@ h1 {
 .list-left{
 	float:left;
 	display:inline-block;
-	width:520px;
+	width:500px;
 }
 .list-right{
 	display:inline-block;
 	float:right;
-	width:520px;
+	width:500px;
 }
 .column {
 	padding-bottom:60px;
@@ -122,6 +123,7 @@ h1 {
 	font-size:12px;
 	font-family:Aleo-LightItalic;
 	float: left;
+	margin-top: 5px;
 }
 .name-dish {
 	font-size:16px;
