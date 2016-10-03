@@ -63,8 +63,8 @@ h1 {
 	color: #ffffff;
 	padding-top: 210px;
 	margin: 0;
-    word-spacing: -9px;
-    letter-spacing: -8px;
+	word-spacing: -9px;
+	letter-spacing: -8px;
 }
 .text-slide {
 	font-size: 16px;
@@ -188,7 +188,7 @@ h1 {
 }
 .top-block-dishes {
 	height: 23px;
-    padding-bottom: 80px;	
+	padding-bottom: 80px;	
 }
 .block-title {
 	color: #3b3b3b;
@@ -212,9 +212,9 @@ h1 {
 	float: left;
 }
 .buttons-carusel{
-    list-style: none;
-    margin: 0;
-    float: right;
+	list-style: none;
+	margin: 0;
+	float: right;
 	padding-top: 15px;
 }
 .buttons-carusel li{
@@ -225,8 +225,8 @@ h1 {
 	background-image: url("images/button-slide.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-    padding-top: 9px;
-    padding-right: 9px;
+	padding-top: 9px;
+	padding-right: 9px;
 }
 .button-carusel:hover {
 	background-image: url("images/button-slide-active.png");
@@ -272,8 +272,8 @@ h1 {
 	background-position: 0 0;
  	list-style-type: none;
  	display: inline;
-    padding-top: 13px;
-    padding-right: 17px;
+	padding-top: 13px;
+	padding-right: 17px;
 	cursor: pointer;
 }
 .rating li:hover{
@@ -360,7 +360,7 @@ footer ul {
 	font-size: 16px;
 	color: #ffffff;
 	text-decoration: none;
-    line-height: 39px;
+	line-height: 39px;
 }
 .nav-footer li a:hover{
 	text-decoration: underline;
@@ -373,8 +373,8 @@ footer ul {
 	background-image: url("images/footer-logo.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-    padding-left: 81px;
-    padding-bottom: 11px;
+	padding-left: 81px;
+	padding-bottom: 11px;
 }
 .indent-block-2 {
 	padding-left: 62px;
