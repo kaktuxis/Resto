@@ -324,7 +324,7 @@ footer {
 	height: 315px;
 	background-color: #3b3b3b;
 }
-footer ul {
+footer div {
 	list-style: none;
 	padding: 0;
 	text-align: left;
@@ -333,18 +333,21 @@ footer ul {
 	padding-top: 100px;
 }
 .text-bottom {
+	display: block;
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 35px;
 	font-family: Aleo-Regular;
 }
 .contact {
+	display: block;
 	line-height: 35px;
 	font-size: 16px;
 	color: #ebebeb;
 	font-family: Aleo-Light;
 }
 .tel {
+	display: block;
 	color: #c6c6c6;
 	font-size: 16px;
 	font-family: Aleo-Bold;
@@ -354,17 +357,18 @@ footer ul {
 	padding-left: 62px;
 	vertical-align: top;
 }
-.nav-footer li{
+.nav-footer {
 	font-size: 16px;
 	color: #ffffff;
 }
-.nav-footer li a{
+.nav-footer a{
+	display: block;
 	font-size: 16px;
 	color: #ffffff;
 	text-decoration: none;
 	line-height: 39px;
 }
-.nav-footer li a:hover{
+.nav-footer a:hover{
 	text-decoration: underline;
 }
 .about {
