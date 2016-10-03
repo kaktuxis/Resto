@@ -117,18 +117,15 @@ h1 {
 	padding-top: 81px;
 	padding-bottom: 90px;
 }
-.list-item-left,
-.list-item-right {
-	display: inline-block;
+.list-item {
+	display: inline-table;
 	height: 30px;
 	width: 500px;
+	padding-right: 96px;
 }
-.list-item-left {
-	float: left;
-}
-.list-item-right {
-	float: right;
-}
+.list-item:last-of-type{
+	padding-right: 0;
+} 
 .composition {
 	color: #b7b7b7;
 	font-size: 12px;
