@@ -113,39 +113,34 @@ h1 {
 	right: 0;
 	border-left: 75px solid transparent;
 }
-.list {
-	height: 335px;
+.menu {
+	margin: 0 auto; 
 	padding-top: 81px;
 	padding-bottom: 90px;
 }
-.list-item {
+.menu .list-item {
 	display: inline-table;
-	height: 30px;
-	width: 500px;
-	padding-right: 96px;
+	width: 493px;
+	margin-right: 110px;
+	margin-bottom: 60px;
 }
-.list-item:last-child {
-	padding-right: 0;
-} 
-.composition {
-	color: #b7b7b7;
-	font-size: 12px;
-	font-family: Aleo-LightItalic;
-	float: left;
-	margin-top: 5px;
-	padding-bottom: 60px;
+.menu .list-item:nth-child(2n) {
+	margin-right: 0;
 }
-.name-dish {
+.menu .list-item:nth-child(7),
+.menu .list-item:nth-child(8) {
+	margin-bottom: 0;
+}  
+.menu .list-item .title {
+	display: inline-block;
 	font-size: 16px;
-	float: left;
-	text-align: left;
 	color: #555555;
 	font-family: Aleo-Regular;
-	margin-right: 45px;
+	margin-right: 35px;
 	overflow: hidden;
 	width: 85%;
 }
-.name-dish:after{
+.menu .list-item .title:after{
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -155,13 +150,18 @@ h1 {
 	margin-right: -100%;
 	margin-left: 45px;
 }
-.price {
+.menu .list-item .cena {
+	display: inline-block;
 	color: #555555;
 	font-size: 16px;
-	float: right;
-	margin-top: -20px;
 	font-family: Aleo-Regular;
 	display: inline-block;
+}
+.menu .list-item .ingredients {
+	color: #b7b7b7;
+	font-size: 12px;
+	font-family: Aleo-LightItalic;
+	margin-top: 5px;
 }
 .button{
 	margin: 0 auto;
@@ -189,7 +189,7 @@ h1 {
 	background-color: #c6c6c6;
 }
 .block-dishes{
-	padding-top: 100px;
+	padding-top: 200px;
 }
 .top-block-dishes {
 	height: 24px;
