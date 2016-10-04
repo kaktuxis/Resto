@@ -193,7 +193,8 @@ h1 {
 }
 .top-block-dishes {
 	height: 24px;
-	padding-bottom: 80px;	
+	padding-bottom: 80px;
+	position: relative;
 }
 .block-title {
 	color: #3b3b3b;
@@ -214,12 +215,13 @@ h1 {
 	margin-left: 20px;
 }
 .top-block-dishes h2{
-	float: left;
+	position:absolute
 }
 .buttons-carusel{
 	list-style: none;
 	margin: 0;
-	float: right;
+	position: absolute;
+	right: 0;
 	padding-top: 15px;
 }
 .buttons-carusel li{
@@ -242,7 +244,6 @@ h1 {
 }
 .column-dishes {
 	display: inline-block;
-	height: 250px;
 	width: 230px;
 	padding-right: 56px;
 }
@@ -253,19 +254,17 @@ h1 {
 	padding-bottom: 30px;
 }
 .property{
-	width: 165px;
+	display:inline-block;
 	font-family: Aleo-Light;
 	font-size: 16px;
 	color: #9c9c9c;
-	float: left;
+	width: 86%;
 }
 .property-price{
-	width: 50px;
+	display:inline-block;
 	font-family: Aleo-Light;
 	font-size: 16px;
 	color: #9c9c9c;
-	float: right;
-	text-align: right;
 }
 .rating{
 	padding-top: 25px;
