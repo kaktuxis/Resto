@@ -1,6 +1,6 @@
 @font-face {font-family: Aleo-Regular; src: url(font/Aleo-Regular.otf);}
-@font-face {font-family: Aleo-Bold.otf; src: url(font/Aleo-Bold.otf);}
-@font-face {font-family: Aleo-LightItalic.otf; src: url(font/Aleo-LightItalic.otf);}
+@font-face {font-family: Aleo-Bold; src: url(font/Aleo-Bold.otf);}
+@font-face {font-family: Aleo-LightItalic; src: url(font/Aleo-LightItalic.otf);}
 @font-face {font-family: Aleo-Light; src: url(font/Aleo-Light.otf);}
 @font-face {font-family: WCManoNegraBta; src: url(font/WCManoNegraBta.otf);}
 body {
@@ -40,7 +40,7 @@ header {
 	display: inline;
 	padding-right: 50px;
 }
-.navigation li:last-of-type{
+.navigation li:last-child {
 	padding-right: 0;
 }
 .navigation li a {
@@ -123,7 +123,7 @@ h1 {
 	width: 500px;
 	padding-right: 96px;
 }
-.list-item:last-of-type{
+.list-item:last-child {
 	padding-right: 0;
 } 
 .composition {
@@ -189,7 +189,7 @@ h1 {
 	padding-top: 100px;
 }
 .top-block-dishes {
-	height: 23px;
+	height: 24px;
 	padding-bottom: 80px;	
 }
 .block-title {
@@ -243,7 +243,7 @@ h1 {
 	width: 230px;
 	padding-right: 56px;
 }
-.column-dishes:last-of-type{
+.column-dishes:last-child{
 	padding-right: 0;
 }
 .column-dishes img{
