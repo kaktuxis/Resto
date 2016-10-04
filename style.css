@@ -83,36 +83,37 @@ h1 {
 	margin: 0 30px;
 	vertical-align: 3px;
 }
-.block-menu {
-	text-align: center;
-}
 .menu-title {
-	margin: 0;
+	margin: 0 auto;
 	background-color: #f34949;
-	display: inline-block;
+	display: block;
 	color: #fff;
-	padding: 18px 25px;
+	width: 155px;
+	height: 40px;
+	padding-top: 20px;
+	text-align: center;
 	position: relative;
 	font-size: 20px;
 	font-family: Aleo-Bold;
 }
-.menu-title:after{
+.menu-title:after,
+.menu-title:before {
 	content: "";
 	position: absolute;
 	bottom: -10px;
-	left: 0;
 	border-top: 10px solid #f34949;
+}
+.menu-title:after {
+	content: "";
+	left: 0;
 	border-right: 75px solid transparent;
 }
-.menu-title:before{
+.menu-title:before {
 	content: "";
-	position: absolute;
-	bottom: -10px;
 	right: 0;
-	border-top: 10px solid #f34949;
 	border-left: 75px solid transparent;
 }
-.list{
+.list {
 	height: 335px;
 	padding-top: 81px;
 	padding-bottom: 90px;
@@ -163,16 +164,18 @@ h1 {
 	display: inline-block;
 }
 .button{
+	margin: 0 auto;
+	display: block;
+	width: 130px;
+	padding: 10px 0;
+	text-align:center;
 	background-color: #ffffff;
 	border: 1px #b7b7b7 solid;
 	color: #b7b7b7;
 	font-size: 14px;
 	font-family: Aleo-Regular;
-	padding: 10px;
 	word-spacing: 5px;
-	white-space: nowrap;
 	text-decoration: none;
-	cursor: pointer;
 	cursor: pointer;
 }
 .button:after{
