@@ -114,23 +114,25 @@ h1 {
 	border-left: 75px solid transparent;
 }
 .menu {
-	margin: 0 auto; 
+	margin: 0 auto;
 	padding-top: 81px;
 	padding-bottom: 90px;
+	text-align: justify;
+}
+.menu:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
 }
 .menu-item {
 	display: inline-table;
 	width: 493px;
-	margin-right: 110px;
 	margin-bottom: 60px;
-}
-.menu-item:nth-child(2n) {
-	margin-right: 0;
 }
 .menu-item:nth-child(7),
 .menu-item:nth-child(8) {
 	margin-bottom: 0;
-}  
+}
 .menu-item .title {
 	display: inline-block;
 	font-size: 16px;
