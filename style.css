@@ -95,6 +95,7 @@ h1 {
 	position: relative;
 	font-size: 20px;
 	font-family: Aleo-Bold;
+	margin-bottom: 81px;
 }
 .menu-title:after,
 .menu-title:before {
@@ -115,7 +116,6 @@ h1 {
 }
 .menu {
 	margin: 0 auto;
-	padding-top: 81px;
 	padding-bottom: 90px;
 	text-align: justify;
 }
