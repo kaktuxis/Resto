@@ -33,7 +33,7 @@ header {
 .navigation {
 	position: absolute;
 	margin-top: 40px;
-	right: 200px;
+	right: 0;
 }
 .navigation li {
 	list-style-type: none;
@@ -57,6 +57,9 @@ header {
 	background-image: url("images/slide.png");
 	background-repeat: no-repeat;
 	background-position: center 0;
+	width: 1500px;
+	margin: 0 auto;
+	border-bottom: 5px #f34949 solid;
 }
 h1 {
 	font-family: WCManoNegraBta;
@@ -112,7 +115,6 @@ h1 {
 	border-left: 75px solid transparent;
 }
 .menu {
-	border-top: 5px #f34949 solid;
 	margin: 0 auto;
 	text-align: justify;
 }
@@ -122,7 +124,7 @@ h1 {
 	width: 100%;
 }
 .menu-item {
-	display: inline-table;
+	display: inline-block;
 	width: 493px;
 	margin-bottom: 60px;
 }
@@ -314,8 +316,9 @@ h1 {
 	margin-bottom: -3px;
 }
 footer {
+	padding: 0 200px;
 	margin: 0 auto;
-	width: 1100px;
+	width: 1500px;
 	height: 315px;
 	background-color: #3b3b3b;
 }
