@@ -219,9 +219,8 @@ h1 {
 	margin: 0;
 	position: absolute;
 	right: 0;
-	padding-top: 15px;
 }
-.buttons-carusel li{
+.buttons-carusel i{
 	display: inline;
 	padding-right: 18px;
 }
@@ -229,8 +228,6 @@ h1 {
 	background-image: url("images/button-slide.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	padding-top: 9px;
-	padding-right: 9px;
 }
 .button-carusel:hover {
 	background-image: url("images/button-slide-active.png");
@@ -263,21 +260,16 @@ h1 {
 	font-size: 16px;
 	color: #9c9c9c;
 }
-.rating{
-	padding-top: 25px;
-	margin-left: -41px;
- }
-.rating li {
+.rating i {
  	background-image: url("images/star-null.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
  	list-style-type: none;
  	display: inline;
-	padding-top: 13px;
 	padding-right: 17px;
 	cursor: pointer;
 }
-.rating li:hover{
+.rating i:hover{
  	background-image: url("images/star.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
