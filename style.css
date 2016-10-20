@@ -257,15 +257,11 @@ h1 {
 input{
 	display: none;
 }
-input:checked + label{
+input:checked ~ label{
  	background-image: url("images/star.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
-input:checked + label{
-  background: yellow;
-}
-
 label{
 	display: inline-block;
 	width: 13px;
