@@ -199,14 +199,16 @@ h1 {
 	padding-bottom: 80px;
 	text-transform: uppercase;
 	font-family: Aleo-Bold;
+	display: block;
 }
-.block-title-text {
+.block-title-text,
+.buttons-carusel{
 	display: inline-block;
 }
-.buttons-carusel:before{
-	content: '';
-	display: inline-block;
-	width: 100%;
+.block-title:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 .block-title-text:after{
 	content: '';
@@ -226,7 +228,6 @@ h1 {
 	width: 9px;
 	height: 9px;
 }
-
 .buttons-carusel i:hover {
 	background-image: url("images/button-slide-active.png");
 }
@@ -258,15 +259,16 @@ input{
 	display: none;
 }
 input:checked ~ label{
- 	background-image: url("images/star.png");
-	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-image: url("images/star-null.png");
+}
+input:checked + label{
+	background-image: url("images/star.png");
 }
 label{
 	display: inline-block;
 	width: 13px;
 	height: 13px;
- 	background-image: url("images/star-null.png");
+	background-image: url("images/star.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
