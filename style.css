@@ -3,7 +3,11 @@
 @font-face {font-family: Aleo-LightItalic; src: url(font/Aleo-LightItalic.otf);}
 @font-face {font-family: Aleo-Light; src: url(font/Aleo-Light.otf);}
 @font-face {font-family: WCManoNegraBta; src: url(font/WCManoNegraBta.otf);}
+html{
+    background: url(images/Resto.jpg) top center no-repeat;
+}
 body {
+	opacity: .7;
 	background-color: #ffffff;
 	font-family: Aleo-Regular;
 	margin: 0px;
@@ -29,17 +33,17 @@ header {
 	position: absolute;
 	width: 81px;
 	height: 30px;
-	margin-top: 35px;
+	margin-top: 39px;
 }
 .navigation {
 	position: absolute;
-	margin-top: 40px;
-	right: 0;
+	margin-top: 43px;
+	right: 2px;
 }
 .navigation li {
 	list-style-type: none;
 	display: inline;
-	padding-right: 50px;
+	padding-right: 52px;
 }
 .navigation li:last-child {
 	padding-right: 0;
@@ -66,16 +70,17 @@ h1 {
 	text-align: center;
 	font-size: 100px;
 	color: #ffffff;
-	padding-top: 210px;
+	padding-top: 202px;
 	margin: 0;
-	word-spacing: -9px;
-	letter-spacing: -8px;
+	letter-spacing: -9px;
 }
 .text-slide {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
 	font-family: Aleo-Regular;
+	margin: 0;
+	word-spacing: 5px;
 }
 .text-slide:before,
 .text-slide:after{
@@ -95,7 +100,7 @@ h1 {
 	position: relative;
 	font-size: 20px;
 	font-family: Aleo-Bold;
-	margin-bottom: 81px;
+	margin-bottom: 88px;
 }
 .menu-title:after,
 .menu-title:before {
@@ -114,6 +119,9 @@ h1 {
 	right: 0;
 	border-left: 75px solid transparent;
 }
+.menu{
+		padding-bottom: 10px;
+}
 .menu,
 .content-footer {
 	margin: 0 auto;
@@ -128,7 +136,7 @@ h1 {
 .menu-item {
 	display: inline-block;
 	width: 493px;
-	margin-bottom: 60px;
+	margin-bottom: 54px;
 }
 .menu-item .title {
 	display: inline-block;
@@ -138,6 +146,8 @@ h1 {
 	margin-right: 35px;
 	overflow: hidden;
 	width: 85%;
+	word-spacing: -1px;
+	letter-spacing: 1px;
 }
 .menu-item .title:after{
 	content: '';
@@ -188,18 +198,18 @@ h1 {
 	background-color: #c6c6c6;
 }
 .block-dishes{
-	padding-top: 200px;
+	padding: 194px 0 88px 0;
 }
 .top-block-dishes {
 	height: 24px;
-	padding-bottom: 80px;
+	padding-bottom: 76px;
 }
 .block-title {
 	text-align:justify;
 	color: #3b3b3b;
 	font-size: 20px;
 	margin: 0;
-	padding-bottom: 80px;
+	padding-bottom: 56px;
 	text-transform: uppercase;
 	font-family: Aleo-Bold;
 	display: block;
@@ -207,6 +217,8 @@ h1 {
 .block-title-text,
 .buttons-carusel{
 	display: inline-block;
+	word-spacing: -1px;
+	letter-spacing: 1px;
 }
 .block-title:after{
     content: '';
@@ -243,7 +255,7 @@ h1 {
 	padding-right: 0;
 }
 .column-dishes img{
-	padding-bottom: 30px;
+	padding-bottom: 22px;
 }
 .property{
 	display:inline-block;
@@ -251,6 +263,9 @@ h1 {
 	font-size: 16px;
 	color: #9c9c9c;
 	width: 86%;
+	word-spacing: -1px;
+	letter-spacing: 1px;
+	padding-bottom: 12px;
 }
 .property-price{
 	display:inline-block;
@@ -277,7 +292,11 @@ label{
 }
 .block-gallery{
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 134px;
+}
+.block-gallery .area .block-title-text{
+	word-spacing: 1px;
+    letter-spacing: 2px;
 }
 .column-gallery {
 	display: inline-block;
@@ -296,7 +315,7 @@ footer {
 	padding: 0;
 	text-align: left;
 	display: inline-block;
-	padding-top: 100px;
+	padding-top: 74px;
 }
 .text-bottom {
 	display: block;
