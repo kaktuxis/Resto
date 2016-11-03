@@ -120,11 +120,11 @@ h1 {
 	border-left: 75px solid transparent;
 }
 .menu{
-		padding-bottom: 10px;
+	padding-bottom: 10px;
 }
-.menu,
-.content-footer {
+.menu{
 	margin: 0 auto;
+	text-align: justify;
 }
 .menu:after{
 	content: '';
