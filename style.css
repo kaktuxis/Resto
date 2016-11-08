@@ -373,6 +373,13 @@ footer {
 	right: 30px;
 	top: 100px;
 }
+.resto span {
+	padding-bottom: 6px;
+	letter-spacing: 0;
+}
+.inline {
+	display: inline-block;
+}
 .logo-footer {
 	background-image: url("images/footer-logo.png");
 	background-repeat: no-repeat;
