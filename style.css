@@ -73,6 +73,9 @@ h1 {
 	color: #ffffff;
 	padding-top: 202px;
 	margin: 0;
+	position: relative;
+	left: -5px;
+	font-weight: normal;
 	letter-spacing: -9px;
 }
 .text-slide {
@@ -95,14 +98,14 @@ h1 {
 	display: block;
 	color: #fff;
 	width: 155px;
-	height: 43px;
+	height: 44px;
 	padding-top: 16px;
 	text-align: center;
 	position: relative;
 	font-size: 20px;
 	font-family: Aleo-Bold;
 	margin-bottom: 88px;
-	word-spacing: 8px;
+	letter-spacing: 1px;
 }
 .menu-title:after,
 .menu-title:before {
@@ -135,8 +138,9 @@ h1 {
 }
 .menu-item {
 	display: inline-block;
-	width: 493px;
-	margin-bottom: 54px;
+	width: 491px;
+	height: 70px;
+	margin-bottom: 25px;
 }
 .menu-item .title {
 	display: inline-block;
@@ -146,7 +150,6 @@ h1 {
 	margin-right: 35px;
 	overflow: hidden;
 	width: 85%;
-	word-spacing: -1px;
 	letter-spacing: 1px;
 }
 .menu-item .title:after{
@@ -166,6 +169,7 @@ h1 {
 	display: inline-block;
 	letter-spacing: 1px;
 	margin-right: -3px;
+	vertical-align: top;
 }
 .menu-item .ingredients {
 	color: #b7b7b7;
@@ -176,9 +180,11 @@ h1 {
 .menu-button{
 	margin: 0 auto;
 	display: block;
-	width: 130px;
-	padding: 8px 0;
-	text-align:center;
+	width: 133px;
+	padding: 8.5px 14px;
+	line-height: 1;
+	text-align: left;
+	letter-spacing: .4px;
 	background-color: #ffffff;
 	border: 1px #b7b7b7 solid;
 	color: #b7b7b7;
@@ -187,9 +193,16 @@ h1 {
 	word-spacing: 5px;
 	text-decoration: none;
 	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
 }
 .menu-button:after{
 	content: url(images/down.png);
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -8px;
 }
 .menu-button:hover{
 	background-color: #e0e0e0;
