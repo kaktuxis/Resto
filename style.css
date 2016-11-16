@@ -398,9 +398,10 @@ footer {
 .resto span {
 	padding-bottom: 6px;
 	letter-spacing: 0;
-}
+	}
 .inline {
 	display: inline-block;
+	padding-left: 2px;
 }
 .logo-footer {
 	background-image: url("images/footer-logo.png");
