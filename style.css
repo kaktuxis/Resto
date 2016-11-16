@@ -175,7 +175,7 @@ h1 {
 	color: #b7b7b7;
 	font-size: 12px;
 	font-family: Aleo-LightItalic;
-	word-spacing: 6px;
+	letter-spacing: 1px;
 }
 .menu-button{
 	margin: 0 auto;
