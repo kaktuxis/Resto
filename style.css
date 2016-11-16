@@ -38,12 +38,12 @@ header {
 .navigation {
 	position: absolute;
 	margin-top: 43px;
-	right: 2px;
+	right: 0px;
 }
 .navigation li {
 	list-style-type: none;
 	display: inline;
-	padding-right: 52px;
+	padding-right: 44px;
 }
 .navigation li:last-child {
 	padding-right: 0;
@@ -53,6 +53,7 @@ header {
 	text-decoration: none;
 	font-size: 14px;
 	font-family: Aleo-Regular;
+	letter-spacing: 1px;
 }
 .navigation li a:hover{
 	text-decoration: underline;
@@ -101,7 +102,7 @@ h1 {
 	font-size: 20px;
 	font-family: Aleo-Bold;
 	margin-bottom: 88px;
-	word-spacing: 1px;
+	word-spacing: 8px;
 }
 .menu-title:after,
 .menu-title:before {
@@ -121,7 +122,7 @@ h1 {
 	border-left: 75px solid transparent;
 }
 .menu{
-	padding-bottom: 10px;
+	padding-bottom: 14px;
 }
 .menu{
 	margin: 0 auto;
@@ -159,23 +160,24 @@ h1 {
 	margin-left: 45px;
 }
 .menu-item .cena {
-	display: inline-block;
 	color: #555555;
 	font-size: 16px;
 	font-family: Aleo-Regular;
 	display: inline-block;
+	letter-spacing: 1px;
+	margin-right: -3px;
 }
 .menu-item .ingredients {
 	color: #b7b7b7;
 	font-size: 12px;
 	font-family: Aleo-LightItalic;
-	margin-top: 5px;
+	word-spacing: 6px;
 }
 .menu-button{
 	margin: 0 auto;
 	display: block;
 	width: 130px;
-	padding: 10px 0;
+	padding: 8px 0;
 	text-align:center;
 	background-color: #ffffff;
 	border: 1px #b7b7b7 solid;
@@ -325,6 +327,7 @@ footer {
 .tel{
 	padding-bottom:11px;
 	letter-spacing: 1px;
+	margin-left: -3px;
 }
 .contact {
 	display: block;
@@ -337,6 +340,7 @@ footer {
 	color: #c6c6c6;
 	font-size: 16px;
 	font-family: Aleo-Bold;
+	padding-top: 2px;
 }
 .indent-block {
 	font-size: 16px;
@@ -351,6 +355,7 @@ footer {
 	color: #ffffff;
 	text-decoration: none;
 	padding-bottom: 16px;
+	word-spacing: 7px;
 }
 .indent-block a:hover{
 	text-decoration: underline;
@@ -370,7 +375,7 @@ footer {
 	top: 97px;
 }
 .resto{
-	right: 30px;
+	right: 26px;
 	top: 100px;
 }
 .resto span {
@@ -388,4 +393,5 @@ footer {
 	width: 81px;
 	padding-left: 81px;
 	padding-bottom: 11px;
+	margin-left: -3px;
 }
