@@ -251,7 +251,8 @@ h1 {
 }
 .buttons-carusel i{
 	display: inline-block;
-	padding-right: 10px;
+	margin-left: 11px;
+	margin-top: 7px;
 	background-image: url("images/button-slide.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -374,6 +375,9 @@ footer {
 	padding-bottom: 13px;
 	word-spacing: 7px;
 }
+.nav a{
+	padding-bottom:16px;
+}
 .indent-block a:hover{
 	text-decoration: underline;
 }
@@ -388,7 +392,7 @@ footer {
 	left: 292px;
 }
 .nav{
-	left: 580px;
+	left: 582px;
 	top: 97px;
 }
 .resto{
