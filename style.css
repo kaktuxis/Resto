@@ -121,11 +121,9 @@ h1 {
 	border-left: 75px solid transparent;
 }
 .menu{
-	padding-bottom: 14px;
-}
-.menu{
 	margin: 0 auto;
 	text-align: justify;
+	padding-bottom: 14px;
 }
 .menu:after{
 	content: '';
@@ -288,16 +286,16 @@ h1 {
 	color: #9c9c9c;
 	vertical-align: sub;
 }
-input{
+.star{
 	display: none;
 }
-input:checked ~ label{
+.star:checked ~ .rating{
 	background-image: url("images/star-null.png");
 }
-input:checked + label{
+.star:checked + .rating{
 	background-image: url("images/star.png");
 }
-label{
+.rating{
 	display: inline-block;
 	width: 13px;
 	height: 13px;
@@ -309,9 +307,9 @@ label{
 	margin-top: 109px;
 	margin-bottom: 134px;
 }
-.block-gallery .area .block-title-text{
+.block-gallery .block-title-text{
 	word-spacing: 1px;
-    letter-spacing: 2px;
+	letter-spacing: 2px;
 }
 .column-gallery {
 	display: inline-block;
@@ -326,90 +324,61 @@ footer {
 	height: 315px;
 	background-color: #3b3b3b;
 }
-.content-footer{
-	padding-top: 95px;
-	position: relative;
-}
-.text-bottom {
-	display: block;
-	font-size: 16px;
-	color: #ffffff;
-	font-family: Aleo-Regular;
-}
-.text-bottom,
-.contact,
-.tel{
+.footer-sectoin-text{
 	padding-bottom:11px;
 	letter-spacing: 1px;
 	margin-left: -3px;
+	display: block;
+	font-size: 16px
+}
+.text-bottom {
+	color: #ffffff;
+	font-family: Aleo-Regular;
 }
 .contact {
-	display: block;
-	font-size: 16px;
 	color: #ebebeb;
 	font-family: Aleo-Light;
 }
 .tel {
-	display: block;
 	color: #c6c6c6;
-	font-size: 16px;
 	font-family: Aleo-Bold;
 	padding-top: 2px;
 }
-.indent-block {
+.footer-section {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: left;
 	display: inline-block;
-	position:absolute;
+	vertical-align: top;
+	padding: 95px 111px 0 3px;
 }
-.indent-block a{
+.footer-section:last-child {
+	padding: 95px 0 0 69px;
+}
+.footer-section:last-child .footer-sectoin-text{
+	padding-bottom: 8px;
+	letter-spacing: 0;
+	padding-left:0;
+	padding-right: 5px;
+}
+.footer-section a{
 	display: block;
 	font-size: 16px;
 	color: #ffffff;
 	text-decoration: none;
-	padding-bottom: 13px;
+	padding-bottom: 16px;
 	word-spacing: 7px;
+	margin-left: -11px;
 }
-.nav a{
-	padding-bottom:16px;
-}
-.indent-block a:hover{
+.footer-section a:hover{
 	text-decoration: underline;
 }
-.contact-1,
-.contact-2{
-	top: 95px;
-}
-.contact-1{
-	left: 3px;
-}
-.contact-2{
-	left: 292px;
-}
-.nav{
-	left: 582px;
-	top: 97px;
-}
-.resto{
-	right: 26px;
-	top: 100px;
-}
-.resto span {
-	padding-bottom: 7px;
-	letter-spacing: 0;
-	}
 .inline {
 	display: inline-block;
-	padding-left: 2px;
 }
-.logo-footer {
+a.logo-footer {
 	background-image: url("images/footer-logo.png");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 10px 5px;
 	height: 35px;
-	width: 81px;
-	padding-left: 81px;
-	padding-bottom: 11px;
-	margin-left: -3px;
 }
