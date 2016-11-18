@@ -3,11 +3,7 @@
 @font-face {font-family: Aleo-LightItalic; src: url(font/Aleo-LightItalic.otf);}
 @font-face {font-family: Aleo-Light; src: url(font/Aleo-Light.otf);}
 @font-face {font-family: WCManoNegraBta; src: url(font/WCManoNegraBta.otf);}
-html{
-    background: url(images/Resto.jpg) top center no-repeat;
-}
 body {
-	opacity: .7;
 	background-color: #ffffff;
 	font-family: Aleo-Regular;
 	margin: 0px;
