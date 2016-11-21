@@ -294,7 +294,7 @@ h1 {
 	background-image: url("images/interface/star-null.png");
 }
 .star:checked + .rating{
-	background-image: url("images/interdace/star.png");
+	background-image: url("images/interface/star.png");
 }
 .rating{
 	display: inline-block;
