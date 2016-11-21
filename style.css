@@ -3,7 +3,11 @@
 @font-face {font-family: Aleo-LightItalic; src: url(font/Aleo-LightItalic.otf);}
 @font-face {font-family: Aleo-Light; src: url(font/Aleo-Light.otf);}
 @font-face {font-family: WCManoNegraBta; src: url(font/WCManoNegraBta.otf);}
-body {
+html{
+    background: url(images/Resto.jpg) top center no-repeat;
+}
+  body {
+	opacity: .7;
 	background-color: #ffffff;
 	font-family: Aleo-Regular;
 	margin: 0px;
@@ -305,22 +309,17 @@ h1 {
 }
 .block-gallery{
 	margin-top: 109px;
-	margin-bottom: 134px;
+	height: 731px;
 }
 .block-gallery .block-title-text{
 	word-spacing: 1px;
 	letter-spacing: 2px;
 }
-.column-gallery {
-	display: inline-block;
-	padding-bottom: 60px;
-	width: 366px;
-	margin-right: -3px;
-}
-.gallery-img{
-	margin-bottom: -3px;
+.block-gallery__img{
+	float: left;
 }
 footer {
+	clear: both
 	height: 315px;
 	background-color: #3b3b3b;
 }
@@ -378,8 +377,10 @@ footer {
 	display: inline-block;
 }
 a.logo-footer {
+	display: block;
 	background-image: url("images/footer-logo.png");
 	background-repeat: no-repeat;
-	background-position: 10px 5px;
+	background-position: -1px 4px;
 	height: 35px;
+	padding-bottom: 16px;
 }
