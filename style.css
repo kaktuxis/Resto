@@ -3,11 +3,8 @@
 @font-face {font-family: Aleo-LightItalic; src: url(font/Aleo-LightItalic.otf);}
 @font-face {font-family: Aleo-Light; src: url(font/Aleo-Light.otf);}
 @font-face {font-family: WCManoNegraBta; src: url(font/WCManoNegraBta.otf);}
-html{
-    background: url(images/Resto.jpg) top center no-repeat;
-}
-  body {
-	opacity: .7;
+
+body {
 	background-color: #ffffff;
 	font-family: Aleo-Regular;
 	margin: 0px;
@@ -60,7 +57,7 @@ header {
 }
 .block-slide {
 	height: 570px;
-	background-image: url("images/slide.png");
+	background-image: url("images/interface/slide.png");
 	background-repeat: no-repeat;
 	background-position: center 0;
 	margin: 0 auto;
@@ -88,7 +85,7 @@ h1 {
 }
 .text-slide:before,
 .text-slide:after{
-	content: url(images/lines.png);
+	content: url(images/interface/lines.png);
 	margin: 0 30px;
 	vertical-align: 3px;
 }
@@ -195,7 +192,7 @@ h1 {
 	position: relative;
 }
 .menu-button:after{
-	content: url(images/down.png);
+	content: url(images/interface/down.png);
 	display: block;
 	position: absolute;
 	right: 0px;
@@ -251,7 +248,7 @@ h1 {
 	display: inline-block;
 	margin-left: 11px;
 	margin-top: 7px;
-	background-image: url("images/button-slide.png");
+	background-image: url("images/interface/button-slide.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 9px;
@@ -259,7 +256,7 @@ h1 {
 	vertical-align: super;
 }
 .buttons-carusel i:hover {
-	background-image: url("images/button-slide-active.png");
+	background-image: url("images/interface/button-slide-active.png");
 }
 .column-dishes {
 	display: inline-block;
@@ -294,16 +291,16 @@ h1 {
 	display: none;
 }
 .star:checked ~ .rating{
-	background-image: url("images/star-null.png");
+	background-image: url("images/interface/star-null.png");
 }
 .star:checked + .rating{
-	background-image: url("images/star.png");
+	background-image: url("images/interdace/star.png");
 }
 .rating{
 	display: inline-block;
 	width: 13px;
 	height: 13px;
-	background-image: url("images/star.png");
+	background-image: url("images/interface/star.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
