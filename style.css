@@ -246,8 +246,7 @@ h1 {
 }
 .buttons-carusel i{
 	display: inline-block;
-	margin-left: 11px;
-	margin-top: 7px;
+	margin: 7px 0  0 11px;
 	background-image: url("images/interface/buttons-slide.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -278,8 +277,7 @@ h1 {
 	width: 85%;
 	word-spacing: -1px;
 	letter-spacing: 1px;
-	padding-bottom: 5px;
-	padding-left: 3px;
+	padding: 0 0 5px 3px;
 }
 .property-price{
 	display:inline-block;
@@ -355,10 +353,8 @@ footer {
 	padding: 95px 0 0 69px;
 }
 .footer-section:last-child .footer-sectoin-text{
-	padding-bottom: 8px;
+	padding: 0 5px 8px 0;
 	letter-spacing: 0;
-	padding-left:0;
-	padding-right: 5px;
 }
 .nav-footer a{
 	display: block;
