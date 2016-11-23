@@ -81,6 +81,7 @@ h1 {
 	font-family: Aleo-Regular;
 	margin: 0;
 	word-spacing: 5px;
+	overflow: hidden;
 }
 .text-slide:before,
 .text-slide:after{
