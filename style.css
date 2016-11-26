@@ -336,13 +336,11 @@ h1 {
 }
 footer {
 	clear: both;
-	height: 315px;
 	background-color: #3b3b3b;
 }
 .footer-section-text{
 	padding-bottom:11px;
 	letter-spacing: 1px;
-	margin-left: -3px;
 	display: block;
 	font-size: 16px
 }
@@ -365,10 +363,6 @@ footer {
 	text-align: left;
 	display: inline-block;
 	vertical-align: top;
-	padding: 95px 111px 0 3px;
-}
-.footer-section:last-child {
-	padding: 95px 0 0 69px;
 }
 .footer-section:last-child .footer-sectoin-text{
 	padding: 0 5px 8px 0;
@@ -381,7 +375,6 @@ footer {
 	text-decoration: none;
 	padding-bottom: 16px;
 	word-spacing: 7px;
-	margin-left: -11px;
 }
 .nav-footer a:hover{
 	text-decoration: underline;
