@@ -339,22 +339,22 @@ footer {
 	height: 315px;
 	background-color: #3b3b3b;
 }
-.footer-sectoin-text{
+.footer-section-text{
 	padding-bottom:11px;
 	letter-spacing: 1px;
 	margin-left: -3px;
 	display: block;
 	font-size: 16px
 }
-.footer-sectoin-text__regular {
+.footer-section-text__regular {
 	color: #ffffff;
 	font-family: Aleo-Regular;
 }
-.footer-sectoin-text__light {
+.footer-section-text__light {
 	color: #ebebeb;
 	font-family: Aleo-Light;
 }
-.footer-sectoin-text__bold {
+.footer-section-text__bold {
 	color: #c6c6c6;
 	font-family: Aleo-Bold;
 	padding-top: 2px;
@@ -386,9 +386,9 @@ footer {
 .nav-footer a:hover{
 	text-decoration: underline;
 }
-.footer-section:nth-child(4) .footer-secroin-text:nth-child(3),
-.footer-section:nth-child(4) .footer-secroin-text:nth-child(3) {
+.footer-section-text__inline {
 	display: inline-block;
+	padding-right: 2px;
 }
 a.logo-footer {
 	display: block;
