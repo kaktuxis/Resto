@@ -16,8 +16,8 @@ header {
 	position:relative;
 }
 .menu,
-.block-dishes,
-.block-gallery,
+.dishes,
+.gallery,
 .content-footer {
 	width: 1100px;
 	margin: 0 auto;
@@ -226,12 +226,8 @@ h1 {
 .menu-button:active{
 	background-color: #c6c6c6;
 }
-.block-dishes{
+.dishes{
 	padding: 194px 0 88px 0;
-}
-.top-block-dishes {
-	height: 24px;
-	padding-bottom: 76px;
 }
 .block-title {
 	text-align:justify;
@@ -244,7 +240,7 @@ h1 {
 	display: block;
 }
 .block-title-text,
-.buttons-carusel{
+.carusel__indicator{
 	display: inline-block;
 	word-spacing: -1px;
 	letter-spacing: 1px;
@@ -262,7 +258,7 @@ h1 {
 	border-top: 1px #e3e1e1 solid;
 	margin-left: 20px;
 }
-.buttons-carusel i{
+.carusel__indicator i{
 	display: inline-block;
 	margin: 7px 0  0 11px;
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
@@ -272,22 +268,22 @@ h1 {
 	height: 9px;
 	vertical-align: super;
 }
-.buttons-carusel i:hover {
+.carusel__indicator i:hover {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
 	background-position: -9px -2px;
 }
-.column-dishes {
+.dishes-column {
 	display: inline-block;
 	width: 230px;
 	padding-right: 56px;
 }
-.column-dishes:last-child{
+.dishes-column:last-child{
 	padding-right: 0;
 }
-.column-dishes img{
+.dishes-column img{
 	padding-bottom: 24px;
 }
-.property{
+.dishes-title{
 	display:inline-block;
 	font-family: Aleo-Light;
 	font-size: 16px;
@@ -297,7 +293,7 @@ h1 {
 	letter-spacing: 1px;
 	padding: 2px 0 5px 3px;
 }
-.property-price{
+.dishes-price{
 	display:inline-block;
 	font-family: Aleo-Light;
 	font-size: 16px;
@@ -324,15 +320,15 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: -31px 0;
 }
-.block-gallery{
+.gallery{
 	margin-top: 109px;
 	height: 731px;
 }
-.block-gallery .block-title-text{
+.gallery .block-title-text{
 	word-spacing: 1px;
 	letter-spacing: 2px;
 }
-.block-gallery__img{
+.gallery__img{
 	float: left;
 }
 footer {
@@ -342,21 +338,21 @@ footer {
 .content-footer {
 	font-size: 0;
 }
-.footer-section-text{
+.footer-section__text{
 	padding-bottom:11px;
 	letter-spacing: 1px;
 	display: block;
 	font-size: 16px
 }
-.footer-section-text__regular {
+.footer-section__text__regular {
 	color: #ffffff;
 	font-family: Aleo-Regular;
 }
-.footer-section-text__light {
+.footer-section__text__light {
 	color: #ebebeb;
 	font-family: Aleo-Light;
 }
-.footer-section-text__bold {
+.footer-section__text__bold {
 	color: #c6c6c6;
 	font-family: Aleo-Bold;
 	padding-top: 2px;
@@ -385,7 +381,7 @@ footer {
 .nav-footer a:hover{
 	text-decoration: underline;
 }
-.footer-section-text__inline {
+.footer-section__text__inline {
 	display: inline-block;
 	padding-right: 2px;
 }
