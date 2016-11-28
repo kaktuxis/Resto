@@ -58,10 +58,10 @@ header {
 	height: 570px;
 	background-image: url("images/interface/slide.png");
 	background-repeat: no-repeat;
-	background-position: center 0;
+	background-position: center center;
+	background-size;: cover;
 	margin: 0 auto;
 	border-bottom: 5px #f34949 solid;
-	width: 79%;
 }
 h1 {
 	font-family: WCManoNegraBta;
