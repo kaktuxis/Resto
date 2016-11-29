@@ -1,0 +1,20 @@
+{
+  "name": "Resto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaktuxis/Resto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaktuxis/Resto/issues"
+  },
+  "homepage": "https://github.com/kaktuxis/Resto#readme"
+}
