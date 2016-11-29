@@ -1,7 +1,7 @@
 {
   "name": "Resto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Resto",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kaktuxis/Resto/issues"
   },
-  "homepage": "https://github.com/kaktuxis/Resto#readme"
+  "homepage": "https://github.com/kaktuxis/Resto#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }
