@@ -185,7 +185,7 @@ header {
 	font-family: Aleo-LightItalic;
 	letter-spacing: 1px;
 }
-.menu__button{
+.menu-button{
 	margin: 0 auto;
 	display: block;
 	width: 133px;
@@ -219,18 +219,18 @@ header {
 	top: 50%;
 	margin-top: -4px;
 }
-.menu__button:hover{
+.menu-button:hover{
 	background-color: #e0e0e0;
 	border: 1px #9e9e9e solid;
 }
-.menu__button:active{
+.menu-button:active{
 	background-color: #c6c6c6;
 }
 .dishes{
 	padding: 194px 0 88px 0;
 }
-.dishes-title {
-	text-align:justify;
+.dishes-title,
+.gallery-title {
 	color: #3b3b3b;
 	font-size: 20px;
 	margin: 0;
@@ -238,6 +238,9 @@ header {
 	text-transform: uppercase;
 	font-family: Aleo-Bold;
 	display: block;
+}
+.dishes-title{
+	text-align:justify;
 }
 .dishes__text,
 .carusel__indicator{
@@ -366,7 +369,7 @@ footer {
 	width: 25%;
 	padding: 95px 0 80px 0;
 }
-.footer-section:last-child .footer-sectoin-text{
+.footer-section:last-child .footer-section-text{
 	padding: 0 5px 8px 0;
 	letter-spacing: 0;
 }
