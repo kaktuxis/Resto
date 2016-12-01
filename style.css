@@ -170,7 +170,7 @@ header {
 	margin-right: -100%;
 	margin-left: 45px;
 }
-.menu__cena {
+.menu__price {
 	color: #555555;
 	font-size: 16px;
 	font-family: Aleo-Regular;
@@ -204,11 +204,11 @@ header {
 	box-sizing: border-box;
 	position: relative;
 }
-.menu__button__border {
+.menu-button__border {
 	padding-right: 14px;
 	border-right: 1px solid #b7b7b7;
 }
-.menu__button__icon{
+.menu-button__icon{
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
 	background-repeat: no-repeat;
 	background-position: -19px -2px;
