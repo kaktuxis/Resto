@@ -63,7 +63,7 @@ header {
 	margin: 0 auto;
 	border-bottom: 5px #f34949 solid;
 }
-h1 {
+.block-slide__text-title {
 	font-family: WCManoNegraBta;
 	text-align: center;
 	font-size: 100px;
@@ -75,7 +75,7 @@ h1 {
 	font-weight: normal;
 	letter-spacing: -9px;
 }
-.text-slide {
+.block-slide__text-slide {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
@@ -84,8 +84,8 @@ h1 {
 	word-spacing: 5px;
 	overflow: hidden;
 }
-.text-slide:before,
-.text-slide:after{
+.block-slide__text-slide:before,
+.block-slide__text-slide:after{
 	content: '';
 	margin:0 30px;
 	display: inline-block;
@@ -96,13 +96,13 @@ h1 {
 	border: solid #FFF;
 	border-width: 0 40px;
 }
-.text-slide:before {
+.block-slide__text-slide:before {
 	margin-left: -100%;
 }
-.text-slide:after {
+.block-slide__text-slide:after {
 	margin-right: -100%;
 }
-.menu-title {
+.menu__title {
 	margin: 0 auto;
 	background-color: #f34949;
 	display: block;
@@ -117,19 +117,19 @@ h1 {
 	margin-bottom: 88px;
 	letter-spacing: 1px;
 }
-.menu-title:after,
-.menu-title:before {
+.menu__title:after,
+.menu__title:before {
 	content: "";
 	position: absolute;
 	top: 100%;
 	border-top: 10px solid #f34949;
 }
-.menu-title:after {
+.menu__title:after {
 	content: "";
 	left: 0;
 	border-right: 75px solid transparent;
 }
-.menu-title:before {
+.menu__title:before {
 	content: "";
 	right: 0;
 	border-left: 75px solid transparent;
@@ -144,13 +144,13 @@ h1 {
 	display: inline-block;
 	width: 100%;
 }
-.menu-item {
+.menu__item {
 	display: inline-block;
 	width: 491px;
 	height: 70px;
 	margin-bottom: 25px;
 }
-.menu-item .title {
+.menu__item__title {
 	display: inline-block;
 	font-size: 16px;
 	color: #555555;
@@ -160,7 +160,7 @@ h1 {
 	width: 85%;
 	letter-spacing: 1px;
 }
-.menu-item .title:after{
+.menu__item__title:after{
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -170,7 +170,7 @@ h1 {
 	margin-right: -100%;
 	margin-left: 45px;
 }
-.menu-item .cena {
+.menu__item__cena {
 	color: #555555;
 	font-size: 16px;
 	font-family: Aleo-Regular;
@@ -179,13 +179,13 @@ h1 {
 	margin-right: -3px;
 	vertical-align: top;
 }
-.menu-item .ingredients {
+.menu__item_ingredients {
 	color: #b7b7b7;
 	font-size: 12px;
 	font-family: Aleo-LightItalic;
 	letter-spacing: 1px;
 }
-.menu-button{
+.menu__button{
 	margin: 0 auto;
 	display: block;
 	width: 133px;
@@ -204,11 +204,11 @@ h1 {
 	box-sizing: border-box;
 	position: relative;
 }
-.menu-button span {
+.menu__button__border {
 	padding-right: 14px;
 	border-right: 1px solid #b7b7b7;
 }
-.menu-button i{
+.menu__button__icon{
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
 	background-repeat: no-repeat;
 	background-position: -19px -2px;
@@ -229,7 +229,7 @@ h1 {
 .dishes{
 	padding: 194px 0 88px 0;
 }
-.block-title {
+.dishes-title {
 	text-align:justify;
 	color: #3b3b3b;
 	font-size: 20px;
@@ -239,18 +239,18 @@ h1 {
 	font-family: Aleo-Bold;
 	display: block;
 }
-.block-title-text,
+.dishes__text,
 .carusel__indicator{
 	display: inline-block;
 	word-spacing: -1px;
 	letter-spacing: 1px;
 }
-.block-title:after{
+.dishes-title:after{
     content: '';
     display: inline-block;
     width: 100%;
 }
-.block-title-text:after{
+.dishes-title__text:after{
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -280,7 +280,7 @@ h1 {
 .dishes-column:last-child{
 	padding-right: 0;
 }
-.dishes-column img{
+.dishes-column__img{
 	padding-bottom: 24px;
 }
 .dishes-title{
