@@ -38,23 +38,23 @@ header {
 }
 .navigation li {
 	list-style-type: none;
-	display: inline;
+	display: inline-block;
 	padding-right: 44px;
 }
 .navigation li:last-child {
 	padding-right: 0;
 }
-.navigation li a {
+.navigation__item {
 	color: #3b3b3b;
 	text-decoration: none;
 	font-size: 14px;
 	font-family: Aleo-Regular;
 	letter-spacing: 1px;
 }
-.navigation li a:hover{
+.navigation__item:hover{
 	text-decoration: underline;
 }
-.block-slide {
+.slide {
 	height: 570px;
 	background-image: url("images/interface/slide.png");
 	background-repeat: no-repeat;
@@ -63,7 +63,7 @@ header {
 	margin: 0 auto;
 	border-bottom: 5px #f34949 solid;
 }
-h1 {
+.slide__heading {
 	font-family: WCManoNegraBta;
 	text-align: center;
 	font-size: 100px;
@@ -75,7 +75,7 @@ h1 {
 	font-weight: normal;
 	letter-spacing: -9px;
 }
-.text-slide {
+.slide__sub-heading {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
@@ -84,8 +84,8 @@ h1 {
 	word-spacing: 5px;
 	overflow: hidden;
 }
-.text-slide:before,
-.text-slide:after{
+.slide__sub-heading:before,
+.slide__sub-heading:after{
 	content: '';
 	margin:0 30px;
 	display: inline-block;
@@ -96,13 +96,13 @@ h1 {
 	border: solid #FFF;
 	border-width: 0 40px;
 }
-.text-slide:before {
+.slide__sub-heading:before {
 	margin-left: -100%;
 }
-.text-slide:after {
+.slide__sub-heading:after {
 	margin-right: -100%;
 }
-.menu-title {
+.menu__title {
 	margin: 0 auto;
 	background-color: #f34949;
 	display: block;
@@ -117,19 +117,19 @@ h1 {
 	margin-bottom: 88px;
 	letter-spacing: 1px;
 }
-.menu-title:after,
-.menu-title:before {
+.menu__title:after,
+.menu__title:before {
 	content: "";
 	position: absolute;
 	top: 100%;
 	border-top: 10px solid #f34949;
 }
-.menu-title:after {
+.menu__title:after {
 	content: "";
 	left: 0;
 	border-right: 75px solid transparent;
 }
-.menu-title:before {
+.menu__title:before {
 	content: "";
 	right: 0;
 	border-left: 75px solid transparent;
@@ -144,13 +144,13 @@ h1 {
 	display: inline-block;
 	width: 100%;
 }
-.menu-item {
+.menu__item {
 	display: inline-block;
 	width: 491px;
 	height: 70px;
 	margin-bottom: 25px;
 }
-.menu-item .title {
+.menu__text {
 	display: inline-block;
 	font-size: 16px;
 	color: #555555;
@@ -160,7 +160,7 @@ h1 {
 	width: 85%;
 	letter-spacing: 1px;
 }
-.menu-item .title:after{
+.menu__text:after{
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -170,7 +170,7 @@ h1 {
 	margin-right: -100%;
 	margin-left: 45px;
 }
-.menu-item .cena {
+.menu__price {
 	color: #555555;
 	font-size: 16px;
 	font-family: Aleo-Regular;
@@ -179,7 +179,7 @@ h1 {
 	margin-right: -3px;
 	vertical-align: top;
 }
-.menu-item .ingredients {
+.menu__ingredients {
 	color: #b7b7b7;
 	font-size: 12px;
 	font-family: Aleo-LightItalic;
@@ -204,11 +204,11 @@ h1 {
 	box-sizing: border-box;
 	position: relative;
 }
-.menu-button span {
+.menu-button__border {
 	padding-right: 14px;
 	border-right: 1px solid #b7b7b7;
 }
-.menu-button i{
+.menu-button__icon{
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
 	background-repeat: no-repeat;
 	background-position: -19px -2px;
@@ -229,8 +229,8 @@ h1 {
 .dishes{
 	padding: 194px 0 88px 0;
 }
-.block-title {
-	text-align:justify;
+.dishes-heading,
+.gallery-title {
 	color: #3b3b3b;
 	font-size: 20px;
 	margin: 0;
@@ -239,18 +239,21 @@ h1 {
 	font-family: Aleo-Bold;
 	display: block;
 }
-.block-title-text,
+.dishes-heading{
+	text-align:justify;
+}
+.dishes__text,
 .carusel__indicator{
 	display: inline-block;
 	word-spacing: -1px;
 	letter-spacing: 1px;
 }
-.block-title:after{
+.dishes-heading:after{
     content: '';
     display: inline-block;
     width: 100%;
 }
-.block-title-text:after{
+.dishes-heading__text:after{
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -272,18 +275,24 @@ h1 {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
 	background-position: -9px -2px;
 }
-.dishes-column {
+.carusel__idicator i:hover,
+.carusel__idicator i.on{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
+	background-position: -9px -2px;
+
+}
+.dishes__item {
 	display: inline-block;
 	width: 230px;
 	padding-right: 56px;
 }
-.dishes-column:last-child{
+.dishes__item:last-child{
 	padding-right: 0;
 }
-.dishes-column img{
+.dishes__img{
 	padding-bottom: 24px;
 }
-.dishes-title{
+.dishes__title{
 	display:inline-block;
 	font-family: Aleo-Light;
 	font-size: 16px;
@@ -293,7 +302,7 @@ h1 {
 	letter-spacing: 1px;
 	padding: 2px 0 5px 3px;
 }
-.dishes-price{
+.dishes__price{
 	display:inline-block;
 	font-family: Aleo-Light;
 	font-size: 16px;
@@ -324,7 +333,7 @@ h1 {
 	margin-top: 109px;
 	height: 731px;
 }
-.gallery .block-title-text{
+.gallery__text{
 	word-spacing: 1px;
 	letter-spacing: 2px;
 }
@@ -344,15 +353,15 @@ footer {
 	display: block;
 	font-size: 16px
 }
-.footer-section__text__regular {
+.footer-section__text_regular {
 	color: #ffffff;
 	font-family: Aleo-Regular;
 }
-.footer-section__text__light {
+.footer-section__text_light {
 	color: #ebebeb;
 	font-family: Aleo-Light;
 }
-.footer-section__text__bold {
+.footer-section__text_bold {
 	color: #c6c6c6;
 	font-family: Aleo-Bold;
 	padding-top: 2px;
@@ -366,7 +375,7 @@ footer {
 	width: 25%;
 	padding: 95px 0 80px 0;
 }
-.footer-section:last-child .footer-sectoin-text{
+.footer-section:last-child .footer-section-text{
 	padding: 0 5px 8px 0;
 	letter-spacing: 0;
 }
@@ -381,7 +390,7 @@ footer {
 .nav-footer a:hover{
 	text-decoration: underline;
 }
-.footer-section__text__inline {
+.footer-section__text_inline {
 	display: inline-block;
 	padding-right: 2px;
 }
