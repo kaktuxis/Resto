@@ -54,7 +54,7 @@ header {
 .navigation__item:hover{
 	text-decoration: underline;
 }
-.block-slide {
+.slide {
 	height: 570px;
 	background-image: url("images/interface/slide.png");
 	background-repeat: no-repeat;
@@ -63,7 +63,7 @@ header {
 	margin: 0 auto;
 	border-bottom: 5px #f34949 solid;
 }
-.block-slide__text-title {
+.slide__text-title {
 	font-family: WCManoNegraBta;
 	text-align: center;
 	font-size: 100px;
@@ -75,7 +75,7 @@ header {
 	font-weight: normal;
 	letter-spacing: -9px;
 }
-.block-slide__text-slide {
+.slide__text-slide {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
@@ -84,8 +84,8 @@ header {
 	word-spacing: 5px;
 	overflow: hidden;
 }
-.block-slide__text-slide:before,
-.block-slide__text-slide:after{
+.slide__text-slide:before,
+.slide__text-slide:after{
 	content: '';
 	margin:0 30px;
 	display: inline-block;
@@ -96,10 +96,10 @@ header {
 	border: solid #FFF;
 	border-width: 0 40px;
 }
-.block-slide__text-slide:before {
+.slide__text-slide:before {
 	margin-left: -100%;
 }
-.block-slide__text-slide:after {
+.slide__text-slide:after {
 	margin-right: -100%;
 }
 .menu__title {
@@ -229,7 +229,7 @@ header {
 .dishes{
 	padding: 194px 0 88px 0;
 }
-.dishes-title,
+.dishes-heading,
 .gallery-title {
 	color: #3b3b3b;
 	font-size: 20px;
@@ -239,7 +239,7 @@ header {
 	font-family: Aleo-Bold;
 	display: block;
 }
-.dishes-title{
+.dishes-heading{
 	text-align:justify;
 }
 .dishes__text,
@@ -248,12 +248,12 @@ header {
 	word-spacing: -1px;
 	letter-spacing: 1px;
 }
-.dishes-title:after{
+.dishes-heading:after{
     content: '';
     display: inline-block;
     width: 100%;
 }
-.dishes-title__text:after{
+.dishes-heading__text:after{
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -275,12 +275,18 @@ header {
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
 	background-position: -9px -2px;
 }
-.dishes__column {
+.carusel__idicator i:hover,
+.carusel__idicator i.on{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAANCAYAAAANOvaNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAJ5SURBVHjazJZPSFRRFMZ/3zQVhguNFtVomzZtIqwgmIIItOnPwtaJGxctbNOibCKIcJFT7Vq0yEWoiLuCNhKWqxpC3AStWjiBWLvorxJGp0VnhuvzzlNRyAOP9+5757v3fud857wrM+N/2LcPudhrAdENfeZ1vamiGDMjw+ay48DBNIdIMupispVKBaABKAJdQCswC4wCJWBhcnISSQ1A0cy6JLUCs2Y2CpQkLfT09GwEuYvAD6BvIzCamZnZAUwA+QiwDHQ4uQkzi/pI6sjlcvPAUWCbpLKZISmMdhPQCQwVCoWYLLcCH4FfwD7gT0yW4bxpGDMj6xnL14lK3iOSAfKSlslCUt7M+oDHwAv9W/kcLCmSZg/OEa+P4cha7cAufz4FvFxF1lIxWU9rmnWHBRtmo0pWUjdwGxg0s6uSxp3gK2CnK+MwMA0886kuAxeAZh/vCdYcBj4F40d+rQmT9RpLs5ZABrXMBcQAWvzzNZdGHzDugbklqc3MpoDTwFf3fQhsAe4B2xNr7vVrHugFhqoYSavGZLx5pNmcmc0m5VgdmxlmNhd8um5mJaAReGpmbcAbSSExXA0PgBNAJbLue+BYQGzNmAwwtgK5EUljYabCTPp4JIG5AdzxAJSBMwlioU0DTyLvnwPv1oPJAAO+Aep0y7vAgJmVg0yF9Vf1SdpN4JKksynEqnbe7z+B7/7cuR6MJLKu0fa0/5w7t5tZUVKXmdX+c5JKwEKhUIhtYHAVHW8/cACY8hpd9M57EjgEvF0JY2aLkpZhtAmOX73AbqAf+B0o6oo3nPuR49cSjJfLMsxmINcEfKnj1uinjyS5JZjEgaGG+TsAvOEY6CPO9MEAAAAASUVORK5CYII=');
+	background-position: -9px -2px;
+
+}
+.dishes__item {
 	display: inline-block;
 	width: 230px;
 	padding-right: 56px;
 }
-.dishes__column:last-child{
+.dishes__item:last-child{
 	padding-right: 0;
 }
 .dishes__img{
