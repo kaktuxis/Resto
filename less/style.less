@@ -1,11 +1,16 @@
-@font-face {font-family: Aleo-Regular; src: url(font/Aleo-Regular.otf);}
-@font-face {font-family: Aleo-Bold; src: url(font/Aleo-Bold.otf);}
-@font-face {font-family: Aleo-LightItalic; src: url(font/Aleo-LightItalic.otf);}
-@font-face {font-family: Aleo-Light; src: url(font/Aleo-Light.otf);}
-@font-face {font-family: WCManoNegraBta; src: url(font/WCManoNegraBta.otf);}
+@content-font-normal: Aleo-Regular;
+@content-font-bold: Aleo-Bold;
+@content-font-light: Aleo-Light;
+@content-font-light_italic: Aleo-LightItalic;
+@heading-font-normal: WCManoNegraBta;
+@font-face {font-family: @content-font-normal; src: url(font/Aleo-Regular.otf);}
+@font-face {font-family: @content-font-bold; src: url(font/Aleo-Bold.otf);}
+@font-face {font-family: content-font-light_italic; src: url(font/Aleo-LightItalic.otf);}
+@font-face {font-family: @content-font-light; src: url(font/Aleo-Light.otf);}
+@font-face {font-family: heading-font-normal; src: url(font/WCManoNegraBta.otf);}
 body {
 	background-color: #ffffff;
-	font-family: Aleo-Regular;
+	font-family:  @content-font-normal;
 	margin: 0px;
 	padding: 0px;
 }
@@ -48,7 +53,7 @@ header {
 	color: #3b3b3b;
 	text-decoration: none;
 	font-size: 14px;
-	font-family: Aleo-Regular;
+	font-family:  @content-font-normal;
 	letter-spacing: 1px;
 }
 .navigation__item:hover{
@@ -64,7 +69,7 @@ header {
 	border-bottom: 5px #f34949 solid;
 }
 .slide__heading {
-	font-family: WCManoNegraBta;
+	font-family: @heading-font-normal;
 	text-align: center;
 	font-size: 100px;
 	color: #ffffff;
@@ -79,7 +84,7 @@ header {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
-	font-family: Aleo-Regular;
+	font-family: @content-font-normal;
 	margin: 0;
 	word-spacing: 5px;
 	overflow: hidden;
@@ -113,7 +118,7 @@ header {
 	text-align: center;
 	position: relative;
 	font-size: 20px;
-	font-family: Aleo-Bold;
+	font-family: @content-font-bold;
 	margin-bottom: 88px;
 	letter-spacing: 1px;
 }
@@ -154,7 +159,7 @@ header {
 	display: inline-block;
 	font-size: 16px;
 	color: #555555;
-	font-family: Aleo-Regular;
+	font-family: @content-font-normal;
 	margin-right: 35px;
 	overflow: hidden;
 	width: 85%;
@@ -173,7 +178,7 @@ header {
 .menu__price {
 	color: #555555;
 	font-size: 16px;
-	font-family: Aleo-Regular;
+	font-family: @content-font-normal;
 	display: inline-block;
 	letter-spacing: 1px;
 	margin-right: -3px;
@@ -182,7 +187,7 @@ header {
 .menu__ingredients {
 	color: #b7b7b7;
 	font-size: 12px;
-	font-family: Aleo-LightItalic;
+	font-family: @content-font-light_italic;
 	letter-spacing: 1px;
 }
 .menu-button{
@@ -197,7 +202,7 @@ header {
 	border: 1px #b7b7b7 solid;
 	color: #b7b7b7;
 	font-size: 14px;
-	font-family: Aleo-Regular;
+	font-family: @content-font-normal;
 	word-spacing: 5px;
 	text-decoration: none;
 	cursor: pointer;
@@ -236,7 +241,7 @@ header {
 	margin: 0;
 	padding-bottom: 54px;
 	text-transform: uppercase;
-	font-family: Aleo-Bold;
+	font-family:@content-font-bold;
 	display: block;
 }
 .dishes-heading{
@@ -294,7 +299,7 @@ header {
 }
 .dishes__title{
 	display:inline-block;
-	font-family: Aleo-Light;
+	font-family: @content-font-light;
 	font-size: 16px;
 	color: #9c9c9c;
 	width: 85%;
@@ -304,7 +309,7 @@ header {
 }
 .dishes__price{
 	display:inline-block;
-	font-family: Aleo-Light;
+	font-family: @content-font-light;
 	font-size: 16px;
 	color: #9c9c9c;
 	vertical-align: top;
@@ -355,15 +360,15 @@ footer {
 }
 .footer-section__text_regular {
 	color: #ffffff;
-	font-family: Aleo-Regular;
+	font-family: @content-font-normal;
 }
 .footer-section__text_light {
 	color: #ebebeb;
-	font-family: Aleo-Light;
+	font-family: @content-font-light;
 }
 .footer-section__text_bold {
 	color: #c6c6c6;
-	font-family: Aleo-Bold;
+	font-family: @content-font-bold;
 	padding-top: 2px;
 }
 .footer-section {
