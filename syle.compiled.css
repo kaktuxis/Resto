@@ -7,7 +7,7 @@
   src: url(font/Aleo-Bold.otf);
 }
 @font-face {
-  font-family: content-font-light_italic;
+  font-family: Aleo-LightItalic;
   src: url(font/Aleo-LightItalic.otf);
 }
 @font-face {
@@ -15,7 +15,7 @@
   src: url(font/Aleo-Light.otf);
 }
 @font-face {
-  font-family: heading-font-normal;
+  font-family: WCManoNegraBta;
   src: url(font/WCManoNegraBta.otf);
 }
 body {
