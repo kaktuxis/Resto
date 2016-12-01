@@ -63,7 +63,7 @@ header {
 	margin: 0 auto;
 	border-bottom: 5px #f34949 solid;
 }
-.slide__text-title {
+.slide__heading {
 	font-family: WCManoNegraBta;
 	text-align: center;
 	font-size: 100px;
@@ -75,7 +75,7 @@ header {
 	font-weight: normal;
 	letter-spacing: -9px;
 }
-.slide__text-slide {
+.slide__sub-heading {
 	font-size: 16px;
 	color: #ffffff;
 	text-align: center;
@@ -84,8 +84,8 @@ header {
 	word-spacing: 5px;
 	overflow: hidden;
 }
-.slide__text-slide:before,
-.slide__text-slide:after{
+.slide__sub-heading:before,
+.slide__sub-heading:after{
 	content: '';
 	margin:0 30px;
 	display: inline-block;
@@ -96,10 +96,10 @@ header {
 	border: solid #FFF;
 	border-width: 0 40px;
 }
-.slide__text-slide:before {
+.slide__sub-heading:before {
 	margin-left: -100%;
 }
-.slide__text-slide:after {
+.slide__sub-heading:after {
 	margin-right: -100%;
 }
 .menu__title {
