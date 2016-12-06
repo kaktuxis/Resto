@@ -4,7 +4,8 @@
   "description": "Resto",
   "main": "index.js",
   "scripts": {
-    "build": "grunt default"
+    "build": "grunt default",
+	"dev": "grunt develop"
   },
   "repository": {
     "type": "git",
