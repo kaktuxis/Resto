@@ -13,7 +13,6 @@
   },
   "scripts": {
     "build": "grunt default"
-    "cssnano": "grunt develop"
   },
   "repository": {
     "type": "git",

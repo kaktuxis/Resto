@@ -21,8 +21,7 @@ module.exports = function(grunt) {
 	});
 	  	// Load the plugin that provides the "less" task.
 	grunt.loadNpmTasks("grunt-contrib-less");
-	grunt.loadNpmTasks("grunt-cssnano");
 	// Default task(s).
-	grunt.registerTask('default', ['less:dev']);
-	grunt.registerTask('develop', ['cssnano']);
+	grunt.registerTask('default', ['less:dev', 'cssnano']);
+	
 };
