@@ -1,24 +1,29 @@
 {
-	"name": "Resto",
-	"version": "1.0.0",
-	"description": "Resto",
-	"main": "index.js",
-	"scripts": {
-		"build": "grunt default",
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kaktuxis/Resto.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/kaktuxis/Resto/issues"
-	},
-	"homepage": "https://github.com/kaktuxis/Resto#readme",
-	"devDependencies": {
-		"grunt": "^1.0.1",
-		"grunt-contrib-less": "^1.4.0"
-	}
+  "name": "Resto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cssnano": "^2.1.0"
+  },
+  "scripts": {
+    "build": "grunt default"
+    "cssnano": "grunt develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaktuxis/Resto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaktuxis/Resto/issues"
+  },
+  "homepage": "https://github.com/kaktuxis/Resto#readme"
 }
